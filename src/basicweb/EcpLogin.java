@@ -8,12 +8,15 @@ public class EcpLogin {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String baseUrl = "http://192.168.211.91:12821/ecp/";
+		String baseUrl = "https://ai.qbicloud.com/gateway/";
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "//Users//nb1-1338casper//eclipse-workspace//Selenium//geckodriver");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(baseUrl);
-		driver.findElement(By.id("kw")).sendKeys("Selenium Webdriver");
+		driver.findElement(By.xpath("//div[@id='_JUI_1_']/input")).sendKeys("administrator");
+		driver.findElement(By.xpath("//div[@id='_JUI_2_']/input")).sendKeys("111111");
+		//driver.findElement(By.xpath("//div[@onclick='Index.doSubmit()']")).click();
+		driver.findElement(By.cssSelector("div.LoginButton")).click();
 //		driver.findElement(By.id("kw")).sendKeys("Selenium Webdriver");
 //		driver.findElement(By.xpath("//input[@id='su']")).click();
 
