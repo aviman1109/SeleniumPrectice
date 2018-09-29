@@ -7,7 +7,7 @@ public class GatewayTesting {
 	private static WebDriver driver;
 	private static String baseUrl;
 	public static void main(String[] args) throws Exception{
-		baseUrl = "https://ai.qbicloud.com/gateway/";
+		baseUrl = "http://192.168.211.91:12621/gateway/";
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		driver = new ChromeDriver();
 		Web gateway = new Web();
