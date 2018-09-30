@@ -18,4 +18,4 @@ pipeline:
   ls:
     image: node:8.3.0
     commands:
-      - ls -al /src/basicweb
+      - ls -al /node/drone/node-example/src/basicweb/
