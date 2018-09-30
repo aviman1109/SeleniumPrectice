@@ -13,7 +13,7 @@ pipeline:
     image: node:8.3.0
     commands:
       - yarn install
-      - touch /src/basicweb/Web.java
+      - touch /node/drone/node-example/src/basicweb/Web.java
 
   ls:
     image: node:8.3.0
